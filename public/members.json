@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "pic": "https://i.ibb.co/prB726vt/IMG-3267.jpg",
+    "name": "Nafim Islam",
+    "role": "Chair",
+    "dept": "CSE"
+  },
+  {
+    "id": 2,
+    "pic": "https://via.placeholder.com/150",
+    "name": "Ayesha Khan",
+    "role": "Vice Chair",
+    "dept": "EEE"
+  },
+  {
+    "id": 2,
+    "pic": "https://via.placeholder.com/150",
+    "name": "Ayesha Khan",
+    "role": "Vice Chair",
+    "dept": "EEE"
+  },
+  {
+    "id": 2,
+    "pic": "https://via.placeholder.com/150",
+    "name": "Ayesha Khan",
+    "role": "Vice Chair",
+    "dept": "EEE"
+  },
+  {
+    "id": 2,
+    "pic": "https://via.placeholder.com/150",
+    "name": "Ayesha Khan",
+    "role": "Vice Chair",
+    "dept": "EEE"
+  },
+  {
+    "id": 2,
+    "pic": "https://via.placeholder.com/150",
+    "name": "Ayesha Khan",
+    "role": "Vice Chair",
+    "dept": "EEE"
+  },
+  {
+    "id": 3,
+    "pic": "https://via.placeholder.com/150",
+    "name": "Rahul Das",
+    "role": "Secretary",
+    "dept": "ME"
+  }
+]
