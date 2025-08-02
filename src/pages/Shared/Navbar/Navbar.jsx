@@ -23,13 +23,13 @@ const Navbar = () => {
       {/* Main Navbar */}
       <div className="navbar bg-white px-44">
         {/* Left: Logo */}
-        <div className="navbar-start flex items-center gap-2">
+        <div className="navbar-start flex items-center gap-2 text-md">
           <img src="" alt="MIST-IEEE-logo-2" alt="MIST-IEEE-logo" alt="MIST-IEEE-logo-1" alt="IEEE Logo" className="h-10 w-20" />
         </div>
 
         {/* Center: Nav Links (Desktop) */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-1 text-sm">
+          <ul className="menu menu-horizontal px-1 gap-1 text-[12px]">
             <li><a>Home</a></li>
             <li><a>News</a></li>
 

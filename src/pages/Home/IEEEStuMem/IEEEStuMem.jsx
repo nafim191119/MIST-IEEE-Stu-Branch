@@ -18,18 +18,18 @@ const IEEEStuMem = () => {
         subHeading="Meet Our Core Team"
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {members.map((member, index) => (
           <div
             key={index}
-            className="group card w-full bg-white rounded-xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+            className="group card w-full rounded-3xl border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-200"
           >
             {/* Image */}
-            <figure className="relative overflow-hidden rounded-t-xl">
+            <figure className="relative overflow-hidden rounded-t-2xl">
               <img
                 src={member.pic}
                 alt={member.name}
-                className="h-64 w-full object-cover transform group-hover:scale-110 transition duration-500"
+                className="h-48 w-full object-cover transform group-hover:scale-110 transition duration-500"
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
