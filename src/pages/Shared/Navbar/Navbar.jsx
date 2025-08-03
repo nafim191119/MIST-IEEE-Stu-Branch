@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-1 text-[12px]">
             <li><a>Home</a></li>
-            <li><a>News</a></li>
+            <li><a>About Us</a></li>
 
             <li>
               <details>
@@ -45,17 +45,18 @@ const Navbar = () => {
 
             <li>
               <details>
-                <summary>Newsletters</summary>
+                <summary>Chapters</summary>
                 <ul className="p-2 bg-base-100">
-                  <li><a>2024</a></li>
-                  <li><a>2025</a></li>
+                  <li><a>WIE (Women in Engineering)</a></li>
+                  <li><a>RAS (Robotics & Automation Society)</a></li>
+                  <li><a>CS (Computer Society)</a></li>
                 </ul>
               </details>
             </li>
 
             <li>
               <details>
-                <summary>Chapters</summary>
+                <summary>Events</summary>
                 <ul className="p-2 bg-base-100">
                   <li><a>RAS</a></li>
                   <li><a>WIE</a></li>
@@ -65,7 +66,7 @@ const Navbar = () => {
 
             <li>
               <details>
-                <summary>About</summary>
+                <summary>Gallery</summary>
                 <ul className="p-2 bg-base-100">
                   <li><a>Mission</a></li>
                   <li><a>Contact</a></li>
@@ -73,11 +74,11 @@ const Navbar = () => {
               </details>
             </li>
 
-            <li><a>Join IEEE</a></li>
+            <li><a>Blog/News</a></li>
 
             <li>
               <details>
-                <summary>CARG SIGHT</summary>
+                <summary>Membership</summary>
                 <ul className="p-2 bg-base-100">
                   <li><a>Projects</a></li>
                   <li><a>Events</a></li>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "TechTalk 2025",
+    "date": "2025-07-15",
+    "type": "Webinar",
+    "description": "An IEEE webinar on emerging AI trends.",
+    "outcome": "Over 100 students participated and gained insights on AI.",
+    "poster": "https://i.ibb.co/Xt03dRY/AI-and-machine-learning-00afb90f3d21234fd0f207243f60aa8e.jpg",
+    "isUpcoming": false
+  },
+  {
+    "id": 2,
+    "name": "Innovation Fest 2025",
+    "date": "2025-08-10",
+    "type": "Competition",
+    "description": "A tech competition to showcase innovative student projects.",
+    "outcome": null,
+    "poster": "https://ieee.org/innovationfest-poster.jpg",
+    "isUpcoming": true,
+    "registerLink": "https://forms.gle/register-event"
+  }
+]
