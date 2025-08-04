@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import SectionTitle from "../../../components/Sectiontitle/Sectiontitle";
+import Sectiontitle from "../../../components/Sectiontitle/Sectiontitle";
 
 const Events = () => {
   const [filterYear, setFilterYear] = useState("");
@@ -22,7 +22,7 @@ const Events = () => {
 
   return (
     <div className="px-4 md:px-16 py-10 bg-gray-200">
-      <SectionTitle
+      <Sectiontitle
         heading="IEEE MIST Events"
         subHeading="Explore our latest and past events with ease"
       />
