@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
-
 const Events = () => {
   const [filterYear, setFilterYear] = useState("");
   const [filterType, setFilterType] = useState("");
@@ -22,16 +21,17 @@ const Events = () => {
   });
 
   return (
-    <div className="px-4 md:px-16 py-10 bg-gray-200">
-      <SectionTitle>
+    <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10 bg-gray-200">
+      <SectionTitle
         heading="IEEE MIST Events"
         subHeading="Explore our latest and past events with ease"
-      </SectionTitle>
+      />
 
-      <div className="flex flex-col sm:flex-row justify-end items-center gap-2 sm:gap-3 mt-4 mb-6 px-44">
+      {/* Filter Dropdowns */}
+      <div className="flex flex-col sm:flex-row justify-start sm:justify-end items-start sm:items-center gap-3 mt-4 mb-6 w-full">
         <select
           onChange={(e) => setFilterYear(e.target.value)}
-          className="select select-xs w-28 text-black bg-[#F1F6FA] border border-gray-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-400"
+          className="select select-sm w-full sm:w-36 text-black bg-[#F1F6FA] border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-400"
         >
           <option value="">All Years</option>
           <option value="2025">2025</option>
@@ -43,7 +43,7 @@ const Events = () => {
 
         <select
           onChange={(e) => setFilterType(e.target.value)}
-          className="select select-xs w-28 text-black bg-[#F1F6FA] border border-gray-300 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-400"
+          className="select select-sm w-full sm:w-36 text-black bg-[#F1F6FA] border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-400"
         >
           <option value="">All Types</option>
           <option value="Webinar">Webinar</option>
@@ -53,12 +53,16 @@ const Events = () => {
         </select>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-44">
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
         {filteredEvents.map((event) => (
           <div
             key={event.id}
-            style={{ boxShadow: "0 4px 6px rgba(0, 98, 155, 0.4), 0 0 15px 5px rgba(2, 146, 230, 0.3)"}}
-            className="card bg-[#F1F6FA] hover:bg-gradient-to-tr from-[#e0f1ff] to-[#f4faff] border border-gray-200 shadow-md hover:shadow-xl transition duration-300 h-[450px] flex flex-col justify-between"
+            style={{
+              boxShadow:
+                "0 4px 6px rgba(0, 98, 155, 0.4), 0 0 15px 5px rgba(2, 146, 230, 0.3)",
+            }}
+            className="card bg-[#F1F6FA] hover:bg-gradient-to-tr from-[#e0f1ff] to-[#f4faff] border border-gray-200 shadow-md hover:shadow-xl transition duration-300 flex flex-col"
           >
             <figure>
               <img
@@ -88,7 +92,7 @@ const Events = () => {
                     Register
                   </a>
                 ) : (
-                  <p className="text-sm text-green-600">
+                  <p className="text-sm text-green-600 mt-2">
                     Outcome: {event.outcome}
                   </p>
                 )}
