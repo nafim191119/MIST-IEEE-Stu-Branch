@@ -1,12 +1,13 @@
 import React from 'react';
-import Sectiontitle from '../../../components/Sectiontitle/Sectiontitle';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
+
 
 
 const Affiliations = () => {
     return (
         <div>
             <div>
-                <Sectiontitle heading={"AFFILIATIONS"} subHeading={"Proudly Associated with IEEE and Its Global Network"}></Sectiontitle>
+                <SectionTitle heading={"AFFILIATIONS"} subHeading={"Proudly Associated with IEEE and Its Global Network"}></SectionTitle>
                 <img className='mx-auto pb-8 h-56' src="https://i.ibb.co/TMt9ZTHm/logo.png" alt="MIST logo" />
             </div>
         </div>

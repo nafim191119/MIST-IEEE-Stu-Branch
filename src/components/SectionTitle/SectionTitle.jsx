@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sectiontitle = ({ heading, subHeading }) => {
+const SectionTitle = ({ heading, subHeading }) => {
   return (
     <div className="text-center mb-8 mt-8">
       <div className='divider'></div>
@@ -20,4 +20,4 @@ const Sectiontitle = ({ heading, subHeading }) => {
   );
 };
 
-export default Sectiontitle;
+export default SectionTitle;

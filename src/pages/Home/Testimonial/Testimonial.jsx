@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Sectiontitle from "../../../components/Sectiontitle/Sectiontitle";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+
 
 const testimonials = [
   {
@@ -36,7 +37,7 @@ const Testimonial = () => {
 
   return (
     <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4 md:px-20 overflow-hidden">
-      <Sectiontitle heading="TESTIMONIALS" subHeading="Voices from our IEEE community" />
+      <SectionTitle heading="TESTIMONIALS" subHeading="Voices from our IEEE community" ></SectionTitle>
 
       <div className="relative w-full max-w-3xl mx-auto">
         <div

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Sectiontitle from "../../../components/Sectiontitle/Sectiontitle";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+
 
 const IEEEStuMem = () => {
   const [members, setMembers] = useState([]);
@@ -13,7 +14,7 @@ const IEEEStuMem = () => {
 
   return (
     <div className="mx-10 md:mx-40">
-      <Sectiontitle
+      <SectionTitle
         heading="IEEE MIST STUDENT BRANCH"
         subHeading="Meet Our Core Team"
       />

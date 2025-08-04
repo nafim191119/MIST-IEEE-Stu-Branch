@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Parallax } from "react-parallax";
 import { FaUsers } from "react-icons/fa";
-import Sectiontitle from "../../../components/Sectiontitle/Sectiontitle";
 
 const MemberData = () => {
   const [membersData, setMembersData] = useState([]);
