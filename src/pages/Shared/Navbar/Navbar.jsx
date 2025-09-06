@@ -1,151 +1,172 @@
-import React, { useState } from "react";
-import { FaFacebookF, FaLinkedinIn, FaYoutube, FaSearch, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
 
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+    const [isTeamsOpen, setIsTeamsOpen] = useState(false);
 
-const Navbar = () => {
-    const [mobileOpen, setMobileOpen] = useState(false)
   return (
-    <div className="w-full shadow text-black">
-      {/* Top Bar */}
-      <div className="bg-gray-100 text-[10px] py-1 md:px-44 flex flex-col md:flex-row justify-between items-center text-gray-700 gap-1">
-        <div className="flex items-center gap-4 flex-wrap justify-center">
-          <span className="flex items-center gap-1"><FaMapMarkerAlt /> Mirpur, Dhaka, Bangladesh</span>
-          <span className="flex items-center gap-1"><FaPhoneAlt /> +88 01XXXXXXXX</span>
-          <span className="flex items-center gap-1"><FaEnvelope /> admin@XXXXXXXgmail.com</span>
-        </div>
-        <div className="flex gap-3 mt-1 md:mt-0">
-          <FaFacebookF className="cursor-pointer hover:text-blue-600" />
-          <FaYoutube className="cursor-pointer hover:text-red-500" />
-          <FaLinkedinIn className="cursor-pointer hover:text-blue-700" />
-        </div>
-      </div>
+    <nav className="bg-[#002D62] shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          {/* Left side logo */}
+          <div className="flex items-center">
+            <a href="#home" className="flex items-center gap-2">
+              <img
+                src="/ieee-logo.png"
+                alt="IEEE MIST SB"
+                className="h-10 w-auto"
+              />
+            </a>
+          </div>
 
-      {/* Main Navbar */}
-      <div className="navbar bg-white px-44">
-        {/* Left: Logo */}
-        <div className="navbar-start flex items-center gap-2 text-md">
-<img src="" alt="MIST-IEEE-logo" className="h-10 w-20" />
-        </div>
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center">
+            <ul className="flex space-x-4 text-white font-semibold uppercase tracking-wide text-[10px]">
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">Home</span>
+              </li>
 
-        {/* Center: Nav Links (Desktop) */}
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-1 text-[12px]">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">Activities</span>
+                  <ul className="absolute left-0 top-full hidden group-hover:flex flex-col bg-white p-2 rounded shadow-lg min-w-[80px] text-black">
+                    <li><a href="#events" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Events</a></li>
+                    <li><a href="#news" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">News</a></li>
+                    <li><a href="#achievements" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Achievements</a></li>
+                  </ul>
+              </li>
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">Societies & AG</span>
+                  <ul className="absolute left-0 top-full hidden group-hover:flex flex-col bg-white p-2 rounded shadow-lg min-w-[80px] text-black">
+                    <li><a href="#events" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">RAS</a></li>
+                    <li><a href="#news" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">PAS</a></li>
+                    <li><a href="#achievements" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">ADS</a></li>
+                    <li><a href="#achievements" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">WIE</a></li>
+                  </ul>
+              </li>
 
-            <li>
-              <details>
-                <summary>Members</summary>
-                <ul className="p-2 bg-base-100">
-                  <li><a>Executive</a></li>
-                  <li><a>General</a></li>
-                </ul>
-              </details>
-            </li>
+              <li className="relative group cursor-pointer">
+                <span className="inline-block px-2 py-2">Members</span>
+                  <ul className="absolute left-0 top-full hidden group-hover:flex flex-col bg-white p-2 rounded shadow-lg min-w-[180px] text-black">
+                    <li><a href="#events" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Panel</a></li>
+                    <li><a href="#news" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Officers</a></li>
+                    <li><a href="#achievements" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Volunteers</a></li>
 
-            <li>
-              <details>
-                <summary>Chapters</summary>
-                <ul className="p-2 bg-base-100">
-                  <li><a>WIE (Women in Engineering)</a></li>
-                  <li><a>RAS (Robotics & Automation Society)</a></li>
-                  <li><a>CS (Computer Society)</a></li>
-                </ul>
-              </details>
-            </li>
+                      {/* Nested submenu */}
+                        <li className="relative" onMouseEnter={() => setIsTeamsOpen(true)} onMouseLeave={() => setIsTeamsOpen(false)}>
+                          <span className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white cursor-pointer">Teams ▸</span>
 
-            <li>
-              <details>
-                <summary>Events</summary>
-                <ul className="p-2 bg-base-100">
-                  <li><a>RAS</a></li>
-                  <li><a>WIE</a></li>
-                </ul>
-              </details>
-            </li>
+                          {isTeamsOpen && (
+                            <ul className="absolute left-full top-0 bg-white p-2 rounded shadow-lg min-w-[220px] text-black">
+                              <li><a href="#web" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Website Development</a></li>
+                              <li><a href="#media" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Media</a></li>
+                              <li><a href="#events" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Events & Management</a></li>
+                              <li><a href="#graphics" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Graphics</a></li>
+                              <li><a href="#pr" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Public Relation</a></li>
+                              <li><a href="#promotions" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Promotions</a></li>
+                              <li><a href="#finance" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Finance & Corporate</a></li>
+                              <li><a href="#logistics" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Logistics & Operations</a></li>
+                              <li><a href="#membership" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Membership Development</a></li>
+                            </ul>
+                          )}
+                        </li>
 
-            <li>
-              <details>
-                <summary>Gallery</summary>
-                <ul className="p-2 bg-base-100">
-                  <li><a>Mission</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </details>
-            </li>
+              <li><a href="#achievements" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">Exemplary Members</a></li>
+              <li><a href="#achievements" className="block px-3 py-2 hover:bg-blue-900 rounded hover:text-white">All Members & Statistics</a></li>
+            </ul>
+        </li>
 
-            <li><a>Blog/News</a></li>
 
-            <li>
-              <details>
-                <summary>Membership</summary>
-                <ul className="p-2 bg-base-100">
-                  <li><a>Projects</a></li>
-                  <li><a>Events</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">About</span>
+              </li>
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">Publications</span>
+              </li>
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">Contact</span>
+              </li>
+              <li className="group relative cursor-pointer">
+                <span className="inline-block px-2 py-2">Get Involved</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Right side button */}
+          <div className="flex items-center">
+            <a
+              href="#portal"
+              className="btn btn-outline btn-info btn-sm font-semibold"
+            >
+              IEEE MIST SB Portal
+            </a>
+
+            {/* Mobile toggle */}
+            <button
+              className="text-white text-2xl lg:hidden ml-4"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? "✕" : "☰"}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="bg-white border-t shadow-md lg:hidden px-4 py-2">
-          <ul className="flex flex-col gap-1 text-sm">
-            <li><a>Home</a></li>
-            <li><a>News</a></li>
-            <li>
+      {isOpen && (
+        <div className="lg:hidden bg-[#002D62] px-4 py-4 space-y-2 text-white font-medium uppercase">
+          <a href="#home" className="block">Home</a>
+
+          <details>
+            <summary>Activities</summary>
+            <ul className="ml-4">
+              <li><a href="#events">Events</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Societies & AG</summary>
+            <ul className="ml-4">
+              <li><a href="#ras">RAS</a></li>
+              <li><a href="#pas">PAS</a></li>
+              <li><a href="#ads">ADS</a></li>
+              <li><a href="#wie">WIE</a></li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Members</summary>
+            <ul className="ml-4">
+              <li><a href="#panel">Panel</a></li>
+              <li><a href="#officers">Officers</a></li>
+              <li><a href="#volunteers">Volunteers</a></li>
               <details>
-                <summary className="cursor-pointer">Members</summary>
-                <ul className="pl-4">
-                  <li><a>Executive</a></li>
-                  <li><a>General</a></li>
+                <summary>Teams</summary>
+                <ul className="ml-4">
+                  <li><a href="#content">Content Writing & Publications</a></li>
+                  <li><a href="#web">Website Development</a></li>
+                  <li><a href="#media">Media</a></li>
+                  <li><a href="#events-management">Events & Management</a></li>
+                  <li><a href="#graphics">Graphics</a></li>
+                  <li><a href="#pr">Public Relation</a></li>
+                  <li><a href="#promotions">Promotions</a></li>
+                  <li><a href="#finance">Finance & Corporate</a></li>
+                  <li><a href="#logistics">Logistics & Operations</a></li>
+                  <li><a href="#membership">Membership Development</a></li>
                 </ul>
               </details>
-            </li>
-            <li>
-              <details>
-                <summary className="cursor-pointer">Newsletters</summary>
-                <ul className="pl-4">
-                  <li><a>2024</a></li>
-                  <li><a>2025</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary className="cursor-pointer">Chapters</summary>
-                <ul className="pl-4">
-                  <li><a>RAS</a></li>
-                  <li><a>WIE</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary className="cursor-pointer">About</summary>
-                <ul className="pl-4">
-                  <li><a>Mission</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Join IEEE</a></li>
-            <li>
-              <details>
-                <summary className="cursor-pointer">CARG SIGHT</summary>
-                <ul className="pl-4">
-                  <li><a>Projects</a></li>
-                  <li><a>Events</a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+              <li><a href="#exemplary">Exemplary Members</a></li>
+              <li><a href="#all-members">All Members & Statistics</a></li>
+            </ul>
+          </details>
+
+          <a href="#about" className="block">About</a>
+          <a href="#publications" className="block">Publications</a>
+          <a href="#contact" className="block">Contact</a>
+          <a href="#get-involved" className="block">Get Involved</a>
         </div>
       )}
-    </div>
+    </nav>
   );
-};
-
-export default Navbar;
+}

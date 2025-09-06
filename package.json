@@ -12,6 +12,7 @@
   "dependencies": {
     "@mdbootstrap/react-testimonial-slider": "^1.0.0",
     "localforage": "^1.10.0",
+    "lucide-react": "^0.542.0",
     "match-sorter": "^8.1.0",
     "mdb-react-ui-kit": "^9.0.0",
     "react": "^18.3.1",

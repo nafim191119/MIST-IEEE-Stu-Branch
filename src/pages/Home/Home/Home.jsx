@@ -6,6 +6,9 @@ import MemberData from '../MemberData/MemberData';
 import Testimonial from '../Testimonial/Testimonial';
 import MovingText from '../../../components/MovingText/MovingText';
 import Events from '../Events/Events';
+import WhyJoin from '../WhyJoin/WhyJoin';
+import Vision from '../Vision/Vision';
+import FeaturedEvents from '../FeaturedEvents/FeaturedEvents';
 
 
 
@@ -14,8 +17,12 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <MovingText></MovingText>
-            <IEEEStuMem></IEEEStuMem>
+            <WhyJoin></WhyJoin>
+            <Vision></Vision>
+            <FeaturedEvents></FeaturedEvents>
             <MemberData></MemberData>
+            <IEEEStuMem></IEEEStuMem>
+            
             <Testimonial></Testimonial>
             <Events></Events>
             <Affiliations></Affiliations>
