@@ -1,14 +1,14 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import IEEEStuMem from '../IEEEStuMem/IEEEStuMem';
 import Affiliations from '../Affiliations/Affiliations';
 import MemberData from '../MemberData/MemberData';
 import Testimonial from '../Testimonial/Testimonial';
 import MovingText from '../../../components/MovingText/MovingText';
-import Events from '../Events/Events';
 import WhyJoin from '../WhyJoin/WhyJoin';
 import Vision from '../Vision/Vision';
 import FeaturedEvents from '../FeaturedEvents/FeaturedEvents';
+import News from '../News/News';
+import Blogs from '../Blogs/Blogs';
 
 
 
@@ -21,10 +21,11 @@ const Home = () => {
             <Vision></Vision>
             <FeaturedEvents></FeaturedEvents>
             <MemberData></MemberData>
-            <IEEEStuMem></IEEEStuMem>
-            
+            {/* <IEEEStuMem></IEEEStuMem> */}
+            <News></News>
+            <Blogs></Blogs>
+            {/* <Events></Events> */}
             <Testimonial></Testimonial>
-            <Events></Events>
             <Affiliations></Affiliations>
         </div>
     );

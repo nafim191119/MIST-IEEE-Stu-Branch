@@ -1,0 +1,215 @@
+{
+  "2025": {
+    "Chair": [
+      {
+        "id": 6,
+        "name": "Saiba Aabira",
+        "position": "IEEE WIE Executive Committee",
+        "dept": "",
+        "fb": "https://facebook.com/mariaahmed",
+        "linkedin": "https://linkedin.com/in/mariaahmed",
+        "gmail": "mariaahmed@gmail.com"
+      }
+    ],
+    "Vice Chair": [
+      {
+        "id": 1,
+        "name": "Raisul Islam Ratul",
+        "position": "IEEE Executive Committee",
+        "dept": "",
+        "fb": "https://facebook.com/johndoe",
+        "linkedin": "https://linkedin.com/in/johndoe",
+        "gmail": "johndoe@gmail.com"
+      },
+      {
+        "id": 2,
+        "name": "Raisul Islam",
+        "position": "IEEE APS Executive Committee",
+        "dept": "",
+        "fb": "https://facebook.com/janesmith",
+        "linkedin": "https://linkedin.com/in/janesmith",
+        "gmail": "janesmith@gmail.com"
+      },
+      {
+        "id": 5,
+        "name": "Arshean Subah",
+        "position": "IEEE WIE Executive Committee",
+        "dept": "BBA",
+        "fb": "https://facebook.com/alirahman",
+        "linkedin": "https://linkedin.com/in/alirahman",
+        "gmail": "alirahman@gmail.com"
+      }
+    ],
+    "General Secretary": [
+      {
+        "id": 3,
+        "name": "Fariha Zaman",
+        "position": "IEEE WIE Executive Committee",
+        "dept": "",
+        "fb": "https://facebook.com/michaellee",
+        "linkedin": "https://linkedin.com/in/michaellee",
+        "gmail": "michaellee@gmail.com"
+      }
+    ],
+    "Joint Secretary": [
+      {
+        "id": 4,
+        "name": "Sanjida Afrin",
+        "position": "IEEE WIE Executive Committee",
+        "dept": "Web Master",
+        "fb": "https://facebook.com/sarahkhan",
+        "linkedin": "https://linkedin.com/in/sarahkhan",
+        "gmail": "sarahkhan@gmail.com"
+      }
+    ],
+    "Treasurer": [],
+    "PR": [
+      {
+        "id": 8,
+        "name": "Nusrat Jahan",
+        "role": "PR Head",
+        "position": "Executive",
+        "dept": "CSE",
+        "fb": "https://facebook.com/nusratjahan",
+        "linkedin": "https://linkedin.com/in/nusratjahan",
+        "gmail": "nusratjahan@gmail.com"
+      },
+      {
+        "id": 9,
+        "name": "Rafiul Islam",
+        "role": "PR Coordinator",
+        "position": "Member",
+        "dept": "CE",
+        "fb": "https://facebook.com/rafiul",
+        "linkedin": "https://linkedin.com/in/rafiul",
+        "gmail": "rafiul@gmail.com"
+      }
+    ],
+    "Publication": [
+      {
+        "id": 10,
+        "name": "Sophia Rahman",
+        "role": "Publication Head",
+        "dept": "CSE",
+        "position": "Executive",
+        "fb": "https://facebook.com/sophiarahman",
+        "linkedin": "https://linkedin.com/in/sophiarahman",
+        "gmail": "sophiarahman@gmail.com"
+      },
+      {
+        "id": 11,
+        "name": "Arif Hossain",
+        "role": "Publication Member",
+        "dept": "EEE",
+        "position": "Member",
+        "fb": "https://facebook.com/arifhossain",
+        "linkedin": "https://linkedin.com/in/arifhossain",
+        "gmail": "arifhossain@gmail.com"
+      }
+    ],
+    "Design": [
+      {
+        "id": 12,
+        "name": "Mithila Chowdhury",
+        "role": "Design Lead",
+        "dept": "CSE",
+        "position": "Executive",
+        "fb": "https://facebook.com/mithila",
+        "linkedin": "https://linkedin.com/in/mithila",
+        "gmail": "mithila@gmail.com"
+      },
+      {
+        "id": 13,
+        "name": "Sabbir Ahmed",
+        "role": "Design Member",
+        "dept": "ME",
+        "position": "Member",
+        "fb": "https://facebook.com/sabbir",
+        "linkedin": "https://linkedin.com/in/sabbir",
+        "gmail": "sabbir@gmail.com"
+      }
+    ],
+    "Research": [
+      {
+        "id": 14,
+        "name": "Fatima Noor",
+        "role": "Research Lead",
+        "dept": "CSE",
+        "position": "Executive",
+        "fb": "https://facebook.com/fatima",
+        "linkedin": "https://linkedin.com/in/fatima",
+        "gmail": "fatima@gmail.com"
+      },
+      {
+        "id": 15,
+        "name": "Hasibul Karim",
+        "role": "Research Member",
+        "dept": "EEE",
+        "position": "Member",
+        "fb": "https://facebook.com/hasibul",
+        "linkedin": "https://linkedin.com/in/hasibul",
+        "gmail": "hasibul@gmail.com"
+      }
+    ],
+    "HR": [
+      {
+        "id": 16,
+        "name": "Nadia Islam",
+        "role": "HR Head",
+        "dept": "BBA",
+        "position": "Executive",
+        "fb": "https://facebook.com/nadia",
+        "linkedin": "https://linkedin.com/in/nadia",
+        "gmail": "nadia@gmail.com"
+      },
+      {
+        "id": 17,
+        "name": "Tanvir Hasan",
+        "role": "HR Member",
+        "dept": "CSE",
+        "position": "Member",
+        "fb": "https://facebook.com/tanvir",
+        "linkedin": "https://linkedin.com/in/tanvir",
+        "gmail": "tanvir@gmail.com"
+      }
+    ],
+    "Media": [
+      {
+        "id": 18,
+        "name": "Priya Das",
+        "role": "Media Coordinator",
+        "dept": "CSE",
+        "position": "Member",
+        "fb": "https://facebook.com/priya",
+        "linkedin": "https://linkedin.com/in/priya",
+        "gmail": "priya@gmail.com"
+      }
+    ]
+  },
+  "2024": {
+    "Chair": [],
+    "Vice Chair": [],
+    "General Secretary": [],
+    "Joint Secretary": [],
+    "Treasurer": [],
+    "PR": [],
+    "Publication": [],
+    "Design": [],
+    "Research": [],
+    "HR": [],
+    "Media": []
+  },
+  "2023": {
+    "Chair": [],
+    "Vice Chair": [],
+    "General Secretary": [],
+    "Joint Secretary": [],
+    "Treasurer": [],
+    "PR": [],
+    "Publication": [],
+    "Design": [],
+    "Research": [],
+    "HR": [],
+    "Media": []
+  }
+}

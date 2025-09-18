@@ -24,9 +24,9 @@ const Vision = () => {
         {/* Logo */}
         <div className="flex justify-center lg:justify-end">
           <img
-            src="/ieee-mist-logo.png"
+            src="https://i.ibb.co.com/bRRcyJC1/IEEE-2-removebg-preview.png"
             alt="IEEE MIST SB Logo"
-            className="w-72 lg:w-80"
+            className="w-72 lg:w-80 "
           />
         </div>
       </div>

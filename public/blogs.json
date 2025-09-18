@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "বিজয় দিবস ২০২৩",
+    "date": "Dec. 16, 2023",
+    "author": "IEEE MIST SB",
+    "image": "/news/victory.jpg",
+    "excerpt": "দীর্ঘ নয় মাসের রক্তক্ষয়ী সংগ্রামে যে বিজয়, সে বিজয় আমাদের অহংকার।"
+  },
+  {
+    "id": 2,
+    "title": "জাতীয় শোক দিবস ২০২৩",
+    "date": "Aug. 15, 2023",
+    "author": "IEEE MIST SB",
+    "image": "/news/mourning.jpg",
+    "excerpt": "তুমি ছিলে তুমি রবে বঙ্গবন্ধু শেখ মুজিবুর রহমান। তোমার কৃতিত্বে তোমার স্মৃতি চিরদিনি বহমান।"
+  },
+  {
+    "id": 3,
+    "title": "Eid-ul-Adha",
+    "date": "June 28, 2023",
+    "author": "IEEE MIST SB",
+    "image": "/news/eid.jpg",
+    "excerpt": "Eid ul Adha Mubarak!"
+  },
+  {
+    "id": 4,
+    "title": "Eid-ul-Adha",
+    "date": "June 28, 2023",
+    "author": "IEEE MIST SB",
+    "image": "/news/eid.jpg",
+    "excerpt": "Eid ul Adha Mubarak!"
+  }
+]

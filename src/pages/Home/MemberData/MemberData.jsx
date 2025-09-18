@@ -15,7 +15,7 @@ const MemberData = () => {
   return (
     <div>
       <Parallax
-        bgImage="https://i.ibb.co/1tSQbvFd/b3.png"
+        bgImage="https://i.ibb.co.com/p6NXkLmW/Advanced-digital-technologies.jpg"
         strength={400}
         bgImageStyle={{ objectFit: "cover" }}
       >
@@ -40,9 +40,9 @@ const MemberData = () => {
           </div>
           {/* Section Title Alternative */}
 
-          <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-20 text-center">
+          <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-4 md:px-40 text-center">
             {membersData.map((member, index) => (
-              <div key={index} className="flex flex-col items-center">
+              <div key={index} className="flex flex-col items-center bg-black p-4 rounded-lg transparent">
                 <FaUsers className="text-5xl text-blue-600 mb-2" />
                 <h2 className="text-3xl font-bold">{member.count}+</h2>
                 <p className="text-sm">{member.label}</p>
